@@ -27,13 +27,28 @@ class App extends Component {
           <Layout />
           <Suspense fallback={<h1>Loading...</h1>}>
             <Switch>
-              {routes.map((route) =>
-                route.private ? (
-                  <PrivateRoute key={route.label} {...route} />
-                ) : (
-                  <PublicRoute key={route.label} {...route} />
-                )
-              )}
+              {/* <Route path="/"  exact component={HomeView}/> */}
+              <PrivateRoute
+                path="/contacts"
+                redirectTo="/login"
+                component={ContactView}
+              />
+              <PublicRoute
+                path="/register"
+                restricted={true}
+                redirectTo="/contacts"
+                component={RegisterView}
+              />
+              <PublicRoute
+                path="/login"
+                restricted={true}
+                redirectTo="/contacts"
+                component={LoginView}
+              />
+              <Redirect to="/contacts" />
+              {/* {routes.map((route) => (
+                <Route key={route.path} {...route} />
+              ))} */}
             </Switch>
           </Suspense>
         </div>
