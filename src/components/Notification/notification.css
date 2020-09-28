@@ -1,0 +1,28 @@
+.notification {
+  background-color: red;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.notification-enter {
+  transform: translateX(300%);
+  transition: transform 100ms linear 100ms;
+}
+
+.notification-enter-active {
+  transform: translateX(120%);
+  transition: transform 500ms linear 600ms;
+}
+
+.notification-exit {
+  transform: translateX(500%);
+  transition: transform 500ms linear 600ms;
+}
+
+.error-exit-active {
+  transform: translateX(400%);
+  transition: transform 100ms linear 100ms;
+}

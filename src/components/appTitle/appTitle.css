@@ -1,0 +1,12 @@
+.AppTitle-appear {
+  transform: translateX(-300%);
+}
+.AppTitle-appear-active {
+  transform: translateX(0);
+  transition: transform 500ms linear;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+}

@@ -1,0 +1,45 @@
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  list-style: none;
+}
+
+.btn {
+  margin-bottom: 10px;
+}
+
+.contactList__item {
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.contacts {
+  display: inline;
+  margin-right: 10px;
+}
+
+.enter {
+  transition: all 250ms ease-in-out;
+  transform: translateX(-100%);
+}
+
+.enterActive {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.exit {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 250ms ease-in-out;
+}
+
+.exitActive {
+  opacity: 0;
+  transform: translateX(-100%);
+}
