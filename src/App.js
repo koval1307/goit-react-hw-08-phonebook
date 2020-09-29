@@ -61,7 +61,7 @@ const mapStateToProps = state => ({
   isLoading: contactsSelectors.loading(state),
 });
 const mapDispatchToProps = {
-  onFetchContacts: contactsOperations.fetchContacts,
+
   onGetCurrentUser: authOperations.currentUser,
 };
 export default connect(mapStateToProps, mapDispatchToProps)(App);

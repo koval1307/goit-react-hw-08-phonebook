@@ -16,7 +16,7 @@ import {
 } from "redux-persist";
 
 
-const defaultMiddleware = getDefaultMiddleware();
+
 
 const authPersistConfig = {
   key: 'auth',

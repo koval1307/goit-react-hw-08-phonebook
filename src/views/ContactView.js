@@ -14,7 +14,7 @@ import authOperations from '../redux/auth/authOperations'
 class ContactView extends Component {
   componentDidMount() {
     this.props.onFetchContacts();
-    this.props.onGetCurrentUser()
+ 
   }
   render() {
     return (
@@ -38,7 +38,7 @@ const mapStateToProps = (state) => ({
 });
 const mapDispatchToProps = {
   onFetchContacts: contactsOperations.fetchContacts,
-  onGetCurrentUser:authOperations.currentUser,
+
   
 };
 export default connect(mapStateToProps, mapDispatchToProps)(ContactView);
